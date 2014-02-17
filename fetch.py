@@ -6,10 +6,13 @@ import datetime
 from trovebox import Trovebox
 
 # Only the following fields will be exported:
-EXPORT_FIELDS = ["dateTaken",
+# (from https://github.com/photo/export-openphoto/issues/2)
+EXPORT_FIELDS = ["appid",
+                 "dateTaken",
                  "dateUploaded",
                  "description",
                  "filenameOriginal",
+                 "hash",
                  "latitude",
                  "longitude",
                  "license",
